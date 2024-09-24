@@ -1,7 +1,7 @@
 // Display minimum 1 decimal place, rounded, not truncated
 // Up to 3 decimal places, unless there's a leading 0;
 // in which case up to 4 decimal places
-export const roundDurationLength = (durationLength) => {
+export const roundDurationLength = (durationLength: number) => {
 	let [integerString, decimalString] = durationLength.toString().split('.');
 
 	// Don't display 'undefined'
@@ -19,7 +19,7 @@ export const roundDurationLength = (durationLength) => {
 // Given a decimal number n, return a string representing n as a percentage
 // formatPercentage(0.25) => '25%'
 // formatPercentage(2) => '200%'
-export const formatPercentage = (n) => {
+export const formatPercentage = (n: number) => {
 	n *= 100;
 
 	// Assume we only want to see integer percentages if they're 100% or above
@@ -35,7 +35,7 @@ export const formatPercentage = (n) => {
 // (0, 0.1)
 // (0.5, 1)
 // (1, 8)
-export const getZoomLevelFromSlider = (sliderValue) => {
+export const getZoomLevelFromSlider = (sliderValue: number) => {
 	const a = 18997 / 500;
 	const b = 302469 / 5000;
 	const c = -32031 / 125000;
@@ -44,6 +44,6 @@ export const getZoomLevelFromSlider = (sliderValue) => {
 	return Math.round(a * Math.pow(b, sliderValue + c) + d) / 100;
 };
 
-export const getSliderLevelFromZoom = (zoomValue) => {
+export const getSliderLevelFromZoom = (zoomValue: number) => {
 	// TODO
 };
