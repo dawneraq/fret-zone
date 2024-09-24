@@ -715,6 +715,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/vite-react@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@tsconfig/vite-react@npm:3.0.2"
+  checksum: 10c0/df77743db91786b07dd52b33200e0bed9f3aa813ec40ea165374464383bc67be06efaa16612e2fef5800a5802658eec096ae69d77e72490e5c2ea70a506a2021
+  languageName: node
+  linkType: hard
+
 "@types/aria-query@npm:^5.0.1":
   version: 5.0.1
   resolution: "@types/aria-query@npm:5.0.1"
@@ -1844,6 +1851,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^5.16.5"
     "@testing-library/react": "npm:^9.5.0"
     "@testing-library/user-event": "npm:^7.2.1"
+    "@tsconfig/vite-react": "npm:^3.0.2"
     "@vitejs/plugin-react": "npm:^4.0.1"
     a11y-react-emoji: "npm:^1.1.2"
     clsx: "npm:^1.1.1"
